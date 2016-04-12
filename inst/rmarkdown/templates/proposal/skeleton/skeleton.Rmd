@@ -1,8 +1,9 @@
 ---
-title: "Untitled"
-author: ""
+title: "A Title"
+author: "A. Author"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
-output: "html_document"
+bibliography: "bibliography.bib"
+output: "github_document"
 params:
   project_metadata: "metadata.yaml"
 ---
@@ -10,13 +11,15 @@ params:
 library(yaml)
 meta <- yaml.load_file(params$project_metadata)
 ```
-
+<!--Add the call name on front page--> 
 `r meta$call_details`
 
 ## Abstract
+<!--Add adstract; metadata.yaml description:--> 
 `r meta$description`
 
-Keywords: `r meta$keywords` 
+<!--Add keywords; metadata.yaml keywords:--> 
+*Keywords:* `r meta$keywords` 
 
 ## State-of-the-art
 
