@@ -1,0 +1,48 @@
+# Full project title with acronymn
+project: "Coastal Earth Observation Network (CEON)"
+title: "Coastal Earth Observation Network"
+acronym: "CEON"
+keywords: "Earth Observation, Copernicus, Calibration, Validation, High Performance Computing, Cloud Infrastructure, Service Development"
+funded_by: "CEI·MAR"
+call_details: "CONVOCATORIA DE CONCURSO PÚBLICO DE CONTRATOS POSTDOCTORALES DE REINCORPORACIÓN VINCULADOS AL CAMPUS DE EXCELENCIA INTERNACIONAL DEL MAR CEIMAR"
+funding_url: ""
+project_reference:
+from: 2016-06-01
+to: 2018-06-01
+objective: <
+ "Provide a strong scientific and technical foundation for Coastal Earth Observation Data Science"
+purpose: <
+ "The Coastal Earth Observation Network (CEON) project aims to develop Open Science
+ Calibration/Validation activities, Earth Observation products, Processing Pipelines and
+ Capactity Building to support Earth Observation Data Science of coastal systems.
+ "
+description: <
+ "The Coastal Earth Observation Network (CEON) project aims to strengthen CEI·MAR's capacity
+ to provide a range of services related to the exponential expansion in the availability of
+ Open Acess Earth Observation (EO) data. Building on the experience of the EU project FAST,
+ which provides EO products to support cost-effective, nature-based shoreline protection
+ against flooding and erosion in coastal zones.
+ CEON aims to;
+ 1) Refine and develop the Calibration/Validation activities developed in FAST,
+ 2) Develop complimentary EO products for coastal regions,
+ 3) Develop a demonstration 'Processing on Demand' service, and
+ 4) Foster links between the CEI·MAR EO community.
+ Delivering a strong knowledge infrastructure (code base), capacity building (training materials)
+ and scientific publications documenting EO product development, calibration and validation,
+ the expected impact of CEON is improved competitiveness in the era of 'Big EO Data'. With
+ special emphasis on the European Earth Observation Programme, Copernicus, working with
+ ESA's Coastal Thematic Initiative and the Sentinel validation teams, as well as the continued
+ support of FAST partners... "
+url:  "" # URL project website
+twitter: "@ceimar-ceon" # project twitter account
+facebook: "" # project facebook page
+total_cost: ""
+EU_contribution: ""
+cordis_url: ""
+coordinated_in: ""
+coordinator: "UNIVERSIDAD DE CADIZ, Spain"
+participants:
+  - "THE CHANCELLOR, MASTERS AND SCHOLARS OF THE UNIVERSITY OF CAMBRIDGE, United Kingdom"
+  - "INSTITUTUL NATIONAL DE CERCETARE-DEZVOLTARE PENTRU GEOLOGIE SI GEOECOLOGIE MARINA-GEOECOMAR, Romania"
+  - "STICHTING KONINKLIJK NEDERLANDS INSTITUUT VOOR ZEEONDERZOEK (NIOZ), Netherlands"
+  - "STICHTING DELTARES, Netherlands"

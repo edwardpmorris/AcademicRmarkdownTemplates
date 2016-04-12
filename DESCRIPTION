@@ -1,0 +1,11 @@
+Package: academicRmarkdownTemplates
+Type: Package
+Title: Provides Templates For Academic Writing In Rmarkdown
+Version: 0.1.0
+Author: Edward P. Morris
+Maintainer: Edward P. Morris <edward.morris@uca.es>
+Description: Provides templates useful for academic writing in rmarkdown. Works
+    best with Rstudio.
+License: GPL-3.0
+LazyData: TRUE
+RoxygenNote: 5.0.1

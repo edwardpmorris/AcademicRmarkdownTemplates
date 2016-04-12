@@ -1,0 +1,25 @@
+---
+title: "Untitled"
+author: ""
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+params: !r yaml.load_file('metadata.yaml')
+output: "html_document"
+---
+
+`r params$call_details`
+
+## Abstract
+
+Keywords: `r params$keywords` 
+
+## State-of-the-art
+
+## Hypothesis and objectives
+
+## Methodology and tasks
+
+## Key references
+
+## Work plan and timeline
+
+## Expected impact
