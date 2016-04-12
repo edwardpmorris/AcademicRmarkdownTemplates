@@ -2,15 +2,21 @@
 title: "Untitled"
 author: ""
 date: "`r format(Sys.time(), '%d %B, %Y')`"
-params: !r yaml.load_file('metadata.yaml')
 output: "html_document"
+params:
+  project_metadata: "metadata.yaml"
 ---
+```{r load_metadata, include=FALSE}
+library(yaml)
+meta <- yaml.load_file(params$project_metadata)
+```
 
-`r params$call_details`
+`r meta$call_details`
 
 ## Abstract
+`r meta$description`
 
-Keywords: `r params$keywords` 
+Keywords: `r meta$keywords` 
 
 ## State-of-the-art
 
