@@ -1,4 +1,4 @@
-Package: AcademicRmarkdownTemplates
+Package: academicRmarkdownTemplates
 Type: Package
 Title: Provides Templates For Academic Writing In Rmarkdown
 Version: 0.1.0

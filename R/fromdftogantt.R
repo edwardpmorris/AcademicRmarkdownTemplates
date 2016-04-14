@@ -8,14 +8,16 @@
 #' @export
 #'
 #' @examples
-#' #' file_path <- "asana_export1.csv"
-#' project_start <- "2016-06-01"
-#' df <- parseAsana(file_path,project_start)
-#' df <- df[df$type %in% c(" Milestone", "Task"),]
-#' df[grep("Milestone", df$type),'type'] <- "crit"
-#' df[grep("Subtask", df$type),'type'] <- "done"
-#' df[grep("Task", df$type),'type'] <- "active"
-#' fromdftogantt(df)
+#' \dontrun{
+#' # file_path <- "asana_export1.csv"
+#' # project_start <- "2016-06-01"
+#' # df <- parseAsana(file_path,project_start)
+#' # df <- df[df$type %in% c(" Milestone", "Task"),]
+#' # df[grep("Milestone", df$type),'type'] <- "crit"
+#' # df[grep("Subtask", df$type),'type'] <- "done"
+#' # df[grep("Task", df$type),'type'] <- "active"
+#' # fromdftogantt(df)
+#' }
 fromdftogantt<-function(df,Title="",filename=NULL){
   txt<-paste("gantt","dateFormat  YYYY-MM-DD",paste("title",Title),"",sep="\n")
   for(i in unique(df$section)){

@@ -14,9 +14,9 @@
 #' @export
 #'
 #' @examples
-#' file_path <- "asana_export1.csv"
-#' project_start <- "2016-06-01"
-#' df <- parseAsana(file_path,project_start)
+#' # file_path <- "asana_export1.csv"
+#' # project_start <- "2016-06-01"
+#' # df <- parseAsana(file_path,project_start)
 parseAsana <- function(file_path, project_start, format = "csv") {
   switch (format,
           csv = out <- read.csv(file_path, as.is = T),
