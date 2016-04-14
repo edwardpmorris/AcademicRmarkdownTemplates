@@ -1,6 +1,7 @@
 #' Make a Gantt diagram from a dataframe
 #'
 #' @param df Dataframe
+#' @param width Width of image in pixels
 #' @param Title Title of  diagram
 #' @param filename Optionally write out to a html file. Default is not.
 #'
@@ -18,7 +19,7 @@
 #' # df[grep("Task", df$type),'type'] <- "active"
 #' # fromdftogantt(df)
 #' }
-fromdftogantt<-function(df,Title="",filename=NULL){
+fromdftogantt<-function(df, width = 600, Title=" ", filename = NULL){
   txt<-paste("gantt","dateFormat  YYYY-MM-DD",paste("title",Title),"",sep="\n")
   for(i in unique(df$section)){
     txt<-paste(txt,paste("section",i),sep="\n")
@@ -30,7 +31,7 @@ fromdftogantt<-function(df,Title="",filename=NULL){
     }
     txt<-paste0(txt,"\n")
   }
-  m<-DiagrammeR::mermaid(txt)
+  m<-DiagrammeR::mermaid(txt, width = width)
   m$x$config = list(ganttConfig = list(
     axisFormatter = list(list(
       "%m-%Y"
