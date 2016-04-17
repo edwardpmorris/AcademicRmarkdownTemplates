@@ -2,8 +2,6 @@
 #'
 #' @return MS Word (DOCX) proposal template
 #' @export
-#'
-#' @examples
 proposal <-
   function(toc = FALSE,
            toc_depth = 3,

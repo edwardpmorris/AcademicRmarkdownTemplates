@@ -4,10 +4,12 @@
 \alias{fromdftogantt}
 \title{Make a Gantt diagram from a dataframe}
 \usage{
-fromdftogantt(df, Title = "", filename = NULL)
+fromdftogantt(df, width = 600, Title = " ", filename = NULL)
 }
 \arguments{
 \item{df}{Dataframe}
+
+\item{width}{Width of image in pixels}
 
 \item{Title}{Title of  diagram}
 
