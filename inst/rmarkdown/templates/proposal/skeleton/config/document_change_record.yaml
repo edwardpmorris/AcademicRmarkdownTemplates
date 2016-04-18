@@ -1,0 +1,12 @@
+- 
+ Authors: "EPM" # string of authors initials
+ Modification: "First draft sent to authors" # short comment about major change
+ Version: "0.1.0" # version, X.Y.Z, X is for major releases, Y is for major changes, Z is for minor changes  
+ Date: "2016-04-18" # A date (ISO-8601) representing the time of change.
+ Status: "Draft, Private"
+-
+ Authors: "EPM"
+ Modification: "Second draft sent to authors"
+ Version: "0.2.0"
+ Date: "2016-05-18"
+ Status: "Draft, Private"

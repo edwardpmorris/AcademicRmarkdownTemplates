@@ -2,15 +2,19 @@
 title: "A Title"
 author: "A. Author"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
-bibliography: "bibliography.bib"
-output: "github_document"
+bibliography: "config/bibliography.bib"
+output: "html_document"
 params:
-  project_metadata: "metadata.yaml"
+  project_metadata: "config/metadata.yaml"
+  doc_change: "config/document_change_record.yaml" 
 ---
 ```{r load_metadata, include=FALSE}
 library(yaml)
 meta <- yaml.load_file(params$project_metadata)
 ```
+<!--Add the document change details on front page--> 
+`r addDocChangeTab(params$doc_change, table_out="kable")`
+
 <!--Add the call name on front page--> 
 `r meta$call_details`
 
