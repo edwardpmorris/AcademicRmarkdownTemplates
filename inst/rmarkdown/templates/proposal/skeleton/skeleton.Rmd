@@ -6,6 +6,7 @@ bibliography: "config/bibliography.bib"
 output: "html_document"
 params:
   project_metadata: "config/metadata.yaml"
+  major_version: "0-1"
   doc_change: "config/document_change_record.yaml" 
 ---
 ```{r load_metadata, include=FALSE}

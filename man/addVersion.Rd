@@ -4,10 +4,10 @@
 \alias{addVersion}
 \title{Create version string from Git}
 \usage{
-addVersion(x.y = "0.0", simple = T)
+addVersion(x_y = "0-0", simple = T)
 }
 \arguments{
-\item{x.y}{The major version}
+\item{x-y}{The major version}
 }
 \value{
 A string representing the unique version string
