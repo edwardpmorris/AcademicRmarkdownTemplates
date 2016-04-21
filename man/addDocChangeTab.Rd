@@ -19,7 +19,7 @@ Convert a YAML document listing 'document changes' into a markdown table
 ready for inserting in a document.
 }
 \examples{
-yaml_path="document_change_record.yaml"
-addDocChangeTab(yaml_path, table_out="kable")
+#yaml_path="document_change_record.yaml"
+#addDocChangeTab(yaml_path, table_out="kable")
 }
 

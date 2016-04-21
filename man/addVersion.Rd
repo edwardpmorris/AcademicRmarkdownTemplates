@@ -16,7 +16,7 @@ A string representing the unique version string
 Versioning follows this specification http://programmers.stackexchange.com/questions/141973/how-do-you-achieve-a-numeric-versioning-scheme-with-git
 }
 \examples{
-In a directory with Git version control
-addVersion()
+#In a directory with Git version control
+#addVersion()
 }
 

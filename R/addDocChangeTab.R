@@ -11,8 +11,8 @@ yaml_path="document_change_record.yaml"
 #' @export
 #'
 #' @examples
-#' yaml_path="document_change_record.yaml"
-#' addDocChangeTab(yaml_path, table_out="kable")
+#' #yaml_path="document_change_record.yaml"
+#' #addDocChangeTab(yaml_path, table_out="kable")
 addDocChangeTab <- function(yaml_path, table_out="kable"){
   l <- yaml::yaml.load_file(yaml_path)
   nms <- names(l[[1]])

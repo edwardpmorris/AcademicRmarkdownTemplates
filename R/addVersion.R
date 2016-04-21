@@ -12,13 +12,13 @@
 #' @export
 #'
 #' @examples
-#' In a directory with Git version control
-#' addVersion()
+#' #In a directory with Git version control
+#' #addVersion()
 addVersion <- function(x_y="0-0", simple=T){
   nc <- system("git rev-list HEAD", intern=T)
   nc <- length(nc)
   gh <- system("git rev-parse HEAD", intern=T)
-  if (simple==F){
+  if (simple==T){
     return(paste0(x_y,"-",nc))
   }else{
     return(paste0(x_y,"-",nc,"-r",gh))  
