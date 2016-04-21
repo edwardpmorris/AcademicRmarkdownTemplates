@@ -1,0 +1,9 @@
+# List of figures
+-
+ label: test_figure
+ path: 'test_figure.png'
+ caption: 'Look at my amazing plot'
+-
+ label: test_figure2
+ path: 'test_figure.png'
+ caption: 'Look at my amazing plot'
