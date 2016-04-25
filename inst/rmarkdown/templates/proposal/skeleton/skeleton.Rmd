@@ -3,18 +3,29 @@ title: "A Title"
 author: "A. Author"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 bibliography: "config/bibliography.bib"
-output: "html_document"
+output:
+  html_document:
+    fig_caption: true
 params:
-  project_metadata: "config/metadata.yaml"
   major_version: "0-1"
-  doc_change: "config/document_change_record.yaml" 
+  authors: ""
+  modification: "Fist draft"
+  status: "Draft"
+  project_metadata: "config/metadata.yaml"
+  doc_change: "config/doc_change_list.yaml"
 ---
 ```{r load_metadata, include=FALSE}
+require(academicRmarkdownTemplates)
 library(yaml)
+library(kfigr)
 meta <- yaml.load_file(params$project_metadata)
 ```
 <!--Add the document change details on front page--> 
-`r addDocChangeTab(params$doc_change, table_out="kable")`
+```{r add_doc_change, echo=FALSE}
+if (params$status == "Draft"){
+  addDocChangeTab(params$doc_change, table_out="kable")
+}
+```
 
 <!--Add the call name on front page--> 
 `r meta$call_details`
@@ -28,7 +39,11 @@ meta <- yaml.load_file(params$project_metadata)
 
 ## State-of-the-art
 
+`r insertFig("test_figure", "config/figure_list.yaml")`
+
 ## Hypothesis and objectives
+
+Did you already see my amazing plot (`r figr("test_figure", T)`).
 
 ## Methodology and tasks
 

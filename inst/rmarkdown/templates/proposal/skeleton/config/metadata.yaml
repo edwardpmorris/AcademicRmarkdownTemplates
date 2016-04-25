@@ -1,11 +1,17 @@
+### Project metadata, 1-4 are required ###
 # Full project title with acronymn
-project: ""
+project: "A Project (aPROJECT)"
 # Short title
-title: ""
+title: "A Project"
 # Acronym
-acronym: ""
+acronym: "aPROJECT"
 keywords: "key1, key2, key3"
-funded_by: ""
+# Summary or abstract describing the project
+description: >
+ The project will do some amazing things by defining specifications for stuff,
+ developing cool stuff and producing prototype things. Furthermore, we will tell
+ everyone about it and release our cool stuff as open source code.
+funded_by: "" ### OPTIONAL
 call_details: ""
 # URL with call details
 funding_url: ""
@@ -22,11 +28,6 @@ objective: <
 purpose: <
  The project will do some amazing things by defining specifications for stuff,
  developing cool stuff and producing prototype stuff.
-# Summary or abstract describing the project
-description: <
- The project will do some amazing things by defining specifications for stuff,
- developing cool stuff and producing prototype stuff. Furthermore, we will tell
- everyone about it and release our cool stuff as open source code.
 # URL project website
 url:  ""
 # project twitter account

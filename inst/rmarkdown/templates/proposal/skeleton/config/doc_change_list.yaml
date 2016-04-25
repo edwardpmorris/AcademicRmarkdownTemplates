@@ -1,0 +1,11 @@
+### Document change list
+# Entries can be added manually using template below or by filling in fields in
+# the .Rmd front matter.
+# Every change in major version number will create a new entry
+#
+#- 
+# Authors: "EPM" # string of authors initials
+# Modification: "First draft sent to authors" # short comment about major change
+# Version: "0.1.0" # version, X.Y.Z, X is for major releases, Y is for major changes, Z is for minor changes  
+# Date: "2016-04-18" # A date (ISO-8601) representing the time of change.
+# Status: "Draft"

@@ -16,11 +16,15 @@ insertFig <- function(label, figure_list){
   names(fl) <- sapply(fl, FUN=function(x) x$label)
   caption <- fl[[label]][['caption']]
   path <- fl[[label]][['path']]
+  fig <- kfigr::figr(label, T, link=F, type='Figure')
+  lab <- kfigr::hook_anchor(before = T,
+                            options = list(label=label, anchor="Figure")
+                            )
   return(
-    paste0(
-      "```{r ", label, ", anchor='Figure', include=FALSE}\n```",
-      "![`r figr('", label, "', T)`. ",
-      caption, "](figures/", path, ")"
+    paste(
+      lab,
+      paste0("![", fig, ". ", caption, "](figures/", path, ")"),
+      sep="\n\n"
     )
   )
 }
